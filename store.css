@@ -1,0 +1,116 @@
+body{
+  background-color:lightyellow;
+}
+
+       .navbar {
+            background: linear-gradient(135deg, #ee1515 0%, #cc0000 100%) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 16px !important;
+        }
+
+        .nav-link:hover {
+            color: #ffd700 !important;
+            transform: translateY(-2px);
+
+        }
+
+      .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #ffd700;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after {
+      width: 80%;
+    }
+    
+    .navbar-toggler {
+      border-color: #ffffff !important;
+    }
+    
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    
+    .pokeball-icon {
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+      position: relative;
+      border: 2px solid #33333333;
+    }
+    
+    .pokeball-icon::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -2px;
+      right: -2px;
+      height: 2px;
+      background: #33333333;
+    }
+    
+    .pokeball-icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background: #33333333;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+
+    header {
+           height: 800px;
+           background-image: url(https://cdn.glitch.global/38c3cfb2-b0ca-4f1a-a759-99f5b87b1433/po.webp?v=1731295377121);
+           background-size: cover;
+        }
+
+        .hero {
+            background-color: #ffd700;
+            color: #cc0000;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .product-list{
+             margin-bottom:80px;
+        }
+
+        .product-card {
+            border: 2px solid #cc0000;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
